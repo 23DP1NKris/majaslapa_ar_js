@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: grey;
+}
+
+header {
+    height: 5em;
+    width: 100%;
+
+    background-color: red;
+}
+
+main {
+    height: auto;
+    background-color: lime  ;
+}
+
+footer {
+    background-color: blue;
+}
+
