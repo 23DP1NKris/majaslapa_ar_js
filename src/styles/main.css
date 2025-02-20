@@ -16,7 +16,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    height: 15vh;
+    height: 8vh;
     width: 100%;
     padding: 1em;
 }
@@ -29,25 +29,39 @@ header nav {
 }
 
 header nav a {
-    font-size: 1.2em;
+    font-size: 1.25em;
     color: white;
     text-decoration: none;
-    border-bottom: 3px solid transparent;
+    position: relative;
 }
 
-header nav a:hover {
-    border-bottom: 3px solid white;
+header nav a span {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
 }
+
+header nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.4s ease;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
 
 main {
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.home-title {
-    width: 70%;
-    height: fit-content;
 }
 
 .home-title span {
@@ -76,7 +90,7 @@ main {
 
 .hero-container {
     margin-top: 3em;
-    height: 85vh;
+    height: 86vh;
     max-width: 100vw;
     overflow: hidden;
     position: relative;
@@ -107,6 +121,45 @@ main {
 
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);   
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.performance-title {
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+}
+
+.performance-title span{
+    font-weight: bold;
+    color: white;
+    font-size: 6em;
+}
+
+.performance-card-container {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.performance-card {
+    height: 30vh;
+    width: 20vw;
+    color: white;
+    padding: 1em;
+    background-color: rgb(19, 19, 19);
+    border-radius: 20px;
+
+    mask-image: linear-gradient();
+}
+
+.performance-card span {
+    font-weight: bold;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -140,14 +193,5 @@ footer {
         transform: translateX(0);
         transform: scale(1);
         opacity: 1;
-    }
-}
-
-@keyframes navAnimation {
-    0% {
-
-    }
-    100% {
-        border-bottom: 3px solid white;
     }
 }
