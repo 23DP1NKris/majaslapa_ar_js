@@ -10,67 +10,134 @@
 <body>
     <header>
         <nav>
-            <a href="" target="home">
+            <a href="#home">
                 <span>Home</span>
             </a>
 
-            <a href="" target="performance">
+            <a href="#performance">
                 <span>Performance</span>
             </a>
 
-            <a href="" target=".">           
+            <a href="#specs">           
                 <span>Specs</span>
             </a>
 
-            <a href="">
+            <a href="#contact">
                 <span>Contact us</span>
             </a>
         </nav>
     </header>
 
     <main>
-        <div class="hero-container" id="home">
-            <img src="src/images/hero-image.png" height="100">
-            <span>BMW F80</span>
+        <section id="home">
+            <div class="hero-container">
+                <img src="src/images/hero-image.png" height="100">
+                <span>BMW F80</span>
+            </div>
+            
+            <div class="quote-container">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequuntur necessitatibus aliquid facilis? Quas, nihil perspiciatis ullam quasi aperiam iure, autem id placeat eius esse ea doloremque illo ducimus vero!
+                </p>
+            </div>
+        </section>
+
+        <section id="performance">
+            <div class="title">
+                <span>Performance</span>
+            </div>
+
+            <div class="performance-card-container">
+                <div class="performance-card">
+                    <span>Velocity</span>
+                    <p>The BMW F80 accelerates from 0 to 100 km/h in just over 4 seconds, delivering a burst of exhilarating speed.</p>
+                </div>
+
+                <div class="performance-card">
+                    <span>Precision</span>
+                    <p>Meticulously engineered, the F80 offers razor-sharp handling and an impeccably responsive steering experience.</p>
+                </div>
+
+                <div class="performance-card">
+                    <span>Agility</span>
+                    <p>Its adaptive M suspension and lightweight design enable the F80 to navigate curves with outstanding nimbleness.</p>
+                </div>
+
+                <div class="performance-card">
+                    <span>Power</span>
+                    <p>Under the hood, a twin-turbo inline-six produces up to 431 horsepower, ensuring an unbridled surge of performance.</p>
+                </div>
+
+                <div class="performance-card">
+                    <span>Thrill</span>
+                    <p>Every drive in the F80 is a heart-pounding experience, combining explosive acceleration with dynamic road feedback.</p>
+                </div>
+
+                <div class="performance-card">
+                    <span>Dominance</span>
+                    <p>With aggressive aerodynamics and a commanding presence, the F80 stands out as a true leader on both road and track.</p>
+                </div>
+
+                <div class="performance-card">
+                    <span>Innovation</span>
+                    <p>Cutting-edge technology and advanced materials set the F80 apart, showcasing BMW’s forward-thinking approach to performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="specs">
+            <div class="title">
+                <span>Specs</span>
+            </div>
+            <div class="specs-container">
+                <div class="specs-paragraph">
+                    
+                </div>
+                <div class="specs-paragraph">
+                    <span>Engineering</span>
+                    <p>The F80 is powered by a twin-turbo inline-six engine that delivers exhilarating acceleration and dynamic performance.
+                        Its advanced powertrain systems integrate precision engineering with state-of-the-art technology to maximize efficiency and responsiveness.
+                        Innovative features like the adaptive M suspension and quick-shift transmission ensure that every drive is both thrilling and controlled.
+                        This engineering excellence embodies BMW's commitment to combining raw power with sophisticated performance technology.</p>
+                </div>
+                <div class="specs-paragraph">
+                    <span>Craftmanship</span>
+                    <p>The F80’s construction showcases meticulous craftsmanship with extensive use of lightweight materials such as carbon fiber and aluminum.
+                        Every component is designed to reduce weight without compromising structural integrity or safety.
+                        From the precision-molded exterior panels to the refined interior details, quality is evident in every aspect of its build.
+                        This dedication to superior craftsmanship results in a performance car that not only performs exceptionally but also exudes elegance and durability.</p>
+                </div>
+                <div class="specs-paragraph">
+
+                </div>
+                <div class="specs-paragraph">
+                    
+                </div>
+                <div class="specs-paragraph">
+                    <span>Silhouette</span>
+                    <p>The F80 boasts an aerodynamic silhouette that marries aggressive styling with functional design.
+                        Its sculpted lines and defined curves are crafted to reduce drag while enhancing visual appeal.
+                        The distinctive exterior design elements, including the signature "Powerdome" hood and sharply contoured bodywork, create a commanding presence on the road.
+                        Overall, its well-balanced shape not only captivates the eye but also contributes to improved performance and handling dynamics.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+        <div class="title">
+            <span>Contact Us</span>
         </div>
-        
-        <div class="quote-container">
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequuntur necessitatibus aliquid facilis? Quas, nihil perspiciatis ullam quasi aperiam iure, autem id placeat eius esse ea doloremque illo ducimus vero!
-            </p>
+        <div class="contact-form-container">
+            <form class="contact-form" id="contactForm">
+                <span>E-mail</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Your message..."></textarea>
+                <button id="formSubmit">Send</button>
+            </form>
         </div>
-
-        <div class="performance-title" id="performance">
-            <span>Performance</span>
-        </div>
-
-        <div class="performance-card-container">
-            <div class="performance-card">
-                <span>Engine</span>
-            </div>
-
-            <div class="performance-card">
-                <span>Turbo</span>
-            </div>
-
-            <div class="performance-card">
-                <span>Turbo</span>
-            </div>
-
-            <div class="performance-card">
-                <span>Turbo</span>
-            </div>
-            <div class="performance-card">
-                <span>Turbo</span>
-            </div><div class="performance-card">
-                <span>Turbo</span>
-            </div>
-            <div class="performance-card">
-                <span>Turbo</span>
-            </div>
-        </div>
-
-        
+        </section>
     </main>
 
     <footer>
