@@ -171,6 +171,7 @@ main {
 }
 
 .specs-container {
+    padding: 2em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -180,6 +181,9 @@ main {
 .specs-paragraph {
     height: fit-content;
     padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 .specs-paragraph:nth-child(2),
@@ -188,7 +192,7 @@ main {
 }
 
 .specs-paragraph span {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bold;
     color: white;
 }
@@ -196,6 +200,10 @@ main {
 .specs-paragraph p {
     color: white;
     font-size: 1.25em;
+}
+
+.specs-paragraph img {
+    border-radius: 50px;
 }
 
 .contact-form-container {
@@ -303,4 +311,15 @@ footer {
     100% {
         scale: 1.05;
     }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: scale(1);
 }
