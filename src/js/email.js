@@ -49,6 +49,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         }
     })
     .catch(error => {
-        alert('Oops... Something went wrong: ' + JSON.stringify(error))
+        alert('Something went wrong: ' + JSON.stringify(error))
     })
 })
