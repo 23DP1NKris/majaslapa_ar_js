@@ -186,6 +186,10 @@ main {
     align-content: center;
 }
 
+.specs-paragraph img:hover {
+    animation: enlarge2 1s ease forwards;
+}
+
 .specs-paragraph:nth-child(2),
 .specs-paragraph:nth-child(6) {
     text-align: right;
@@ -313,13 +317,12 @@ footer {
     }
 }
 
-.fade-in {
-    opacity: 0;
-    transform: scale(0.8);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
+@keyframes enlarge2 {
+    0% {
+        scale: 1;
+    }
 
-.fade-in.visible {
-    opacity: 1;
-    transform: scale(1);
+    100% {
+        scale: 1.02;
+    }
 }
