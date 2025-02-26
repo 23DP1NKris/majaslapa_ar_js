@@ -1,5 +1,6 @@
 function generateQuote(){
     document.querySelector('.quote-container p').textContent = 'Loading...'
+    document.querySelector('.quote-container span').textContent = ' '
 
     fetch('https://api.breakingbadquotes.xyz/v1/quotes')
     
